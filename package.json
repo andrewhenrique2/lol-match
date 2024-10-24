@@ -1,0 +1,23 @@
+{
+  "name": "meu-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "packageManager": "npm@9.0.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.9",
+    "ts-node": "^10.9.2",
+    "turbo": "^2.2.3",
+    "typescript": "^5.6.3"
+  },
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend"
+  ]
+}

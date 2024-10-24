@@ -1,0 +1,36 @@
+# Ignorar dependências do Node.js em todas as partes do projeto
+node_modules/
+apps/*/node_modules/
+
+# Ignorar arquivos de lock do npm
+package-lock.json
+apps/*/package-lock.json
+
+# Ignorar diretórios temporários do Turbo
+.turbo/
+
+# Ignorar pastas geradas pelo Next.js
+.next/
+public/
+
+# Ignorar arquivos de configuração ou logs
+*.log
+
+# Ignorar arquivos de configuração do ESLint
+.eslintrc.js
+
+# Ignorar arquivos de configuração do Tailwind
+tailwind.config.js
+postcss.config.js
+
+# Ignorar arquivos de ambiente
+.env
+.next-env.d.ts
+
+# Ignorar arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos do IDE
+.vscode/
+.idea/
