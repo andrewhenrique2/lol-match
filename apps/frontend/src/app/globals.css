@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Boas práticas globais para body */
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased; /* Suavizar fonte no Webkit */
+  -moz-osx-font-smoothing: grayscale; /* Suavizar fonte no macOS */
+}
+
+/* Aplicando antialiasing globalmente */
+* {
+  @apply antialiased; /* Utilitário Tailwind para antialiasing */
+}
+
+/* Definições de altura total para garantir que o layout use 100% da altura */
+html,
+body {
+  @apply h-full;
 }
