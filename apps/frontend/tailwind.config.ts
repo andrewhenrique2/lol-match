@@ -17,6 +17,7 @@ const config: Config = {
         'destructive-foreground': '#ffffff', // Texto branco para destrutivo
         background: '#09090b', // Cor de fundo escura
         button: '#020817',
+        card: '#171825',
         foreground: '#ffffff', // Texto no fundo escuro
         accent: 'hsl(220, 13%, 20%)', // Cor de destaque (Zinc)
         'accent-foreground': '#ffffff', // Texto branco para o destaque
@@ -32,6 +33,9 @@ const config: Config = {
           800: '#27272a',
           900: '#18181b',
         },
+      },
+      fontFamily: {
+        outfit: ['Outfit', 'sans-serif'], // Apenas a fonte Outfit
       },
     },
   },

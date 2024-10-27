@@ -6,11 +6,11 @@ import HowItWorksStep from '@/components/HowItWorksStep'
 
 export default function App() {
   return (
-    <div className="bg-background h-full px-36">
+    <div className="bg-background h-[1920px] px-36">
       <Header />
       <Home />
       <HowItWorksStep />
-      <Card/>
+      <Card />
     </div>
   )
 }

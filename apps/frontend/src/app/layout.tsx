@@ -1,17 +1,11 @@
 import type { Metadata } from 'next'
-import localFont from 'next/font/local'
+import { Outfit } from 'next/font/google' // Importando a fonte corretamente
 import './globals.css'
 
-// Carregando as fontes locais
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900',
-})
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900',
+// Carregando a fonte Outfit
+const outfit = Outfit({
+  subsets: ['latin'],
+  weight: ['300', '400', '600', '700'], // Defina os pesos necessários
 })
 
 // Metadados para SEO
@@ -27,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased h-full`}
-      >
+      <body className={`${outfit.className} antialiased h-full`}>
         {children}
       </body>
     </html>
