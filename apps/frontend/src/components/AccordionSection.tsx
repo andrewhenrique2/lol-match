@@ -3,16 +3,16 @@ import {
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
-} from '@/components/ui/accordion'
+} from '@/components/ui/accordion';
 
 export default function AccordionSection() {
   return (
-    <div className="w-full max-w-3xl mx-auto p-6 sm:p-8 lg:p-12 mt-24  ">
+    <div className="w-full max-w-3xl mx-auto p-6 sm:p-8 lg:p-12 mt-24">
       <h2 className="text-4xl md:text-5xl font-bold text-lime-500 text-center mb-10">
         Alguma dúvida? <br /> Nós temos respostas!
       </h2>
 
-      <Accordion type="single" collapsible className="space-y-6 mb-28 ">
+      <Accordion type="single" collapsible className="space-y-6 mb-28">
         <AccordionItem value="item-1">
           <AccordionTrigger
             className="
@@ -22,7 +22,9 @@ export default function AccordionSection() {
               py-4 
               transition-colors 
               duration-300 
-              hover:text-lime-400"
+              hover:text-lime-400
+              focus:text-lime-500 
+              [data-state='open']:text-lime-500"
           >
             O que é Match?
           </AccordionTrigger>
@@ -45,7 +47,9 @@ export default function AccordionSection() {
               py-4 
               transition-colors 
               duration-300 
-              hover:text-lime-400"
+              hover:text-lime-400
+              focus:text-lime-500
+              [data-state='open']:text-lime-500"
           >
             Como é que funciona?
           </AccordionTrigger>
@@ -68,7 +72,9 @@ export default function AccordionSection() {
               py-4 
               transition-colors 
               duration-300 
-              hover:text-lime-400"
+              hover:text-lime-400
+              focus:text-lime-500
+              [data-state='open']:text-lime-500"
           >
             Que jogos é que o Match suporta?
           </AccordionTrigger>
@@ -89,7 +95,9 @@ export default function AccordionSection() {
               py-4 
               transition-colors 
               duration-300 
-              hover:text-lime-400"
+              hover:text-lime-400
+              focus:text-lime-500
+              [data-state='open']:text-lime-500"
           >
             Custa alguma coisa?
           </AccordionTrigger>
@@ -109,7 +117,9 @@ export default function AccordionSection() {
               py-4 
               transition-colors 
               duration-300 
-              hover:text-lime-400"
+              hover:text-lime-400
+              focus:text-lime-500
+              [data-state='open']:text-lime-500"
           >
             Como funcionam as Avaliações?
           </AccordionTrigger>
@@ -123,5 +133,5 @@ export default function AccordionSection() {
         </AccordionItem>
       </Accordion>
     </div>
-  )
+  );
 }

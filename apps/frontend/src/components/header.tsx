@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import logo from '../../public/logo.png';
-import Image from 'next/image';
-import { Button } from './ui/button';
+import Link from 'next/link'
+import logo from '../../public/logo.png'
+import Image from 'next/image'
+import { Button } from './ui/button'
 
 export default function Header() {
   return (
@@ -30,9 +30,9 @@ export default function Header() {
             Clash
           </Link>
         </nav>
-  
+
         <Link href="/criar-perfil">
-        <Button
+          <Button
             className="
               mb-4 
               bg-lime-600 
@@ -51,9 +51,11 @@ export default function Header() {
               transform 
               hover:scale-105
             "
-          > Procurar Duo </Button>
+          >
+           Iniciar Sessão
+          </Button>
         </Link>
       </div>
     </header>
-  );
+  )
 }

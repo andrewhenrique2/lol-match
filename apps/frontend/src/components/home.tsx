@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import logo from '../../public/personagens.png';
-import { Button } from './ui/button';
+import Image from 'next/image'
+import logo from '../../public/personagens.png'
+import { Button } from './ui/button'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
             encontrar duos.
           </h1>
           <Button
-        className="
+            className="
           bg-lime-600 
           hover:bg-lime-500 
           text-white 
@@ -30,17 +30,14 @@ export default function Home() {
           transform 
           hover:scale-105
         "
-      >Procurar Duo</Button>
+          >
+            Procurar Duo
+          </Button>
         </div>
         <div>
-          <Image
-            src={logo}
-            alt="Duoo"
-            priority
-            className="w-auto h-auto"
-          />
+          <Image src={logo} alt="Duoo" priority className="w-auto h-auto" />
         </div>
       </div>
     </div>
-  );
+  )
 }
