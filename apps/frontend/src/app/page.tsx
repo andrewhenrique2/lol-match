@@ -1,4 +1,5 @@
 // src/app/page.tsx
+import AccordionSection from '@/components/AccordionSection'
 import Card from '@/components/Card'
 import Header from '@/components/header'
 import Home from '@/components/home'
@@ -11,6 +12,7 @@ export default function App() {
       <Home />
       <HowItWorksStep />
       <Card />
+      <AccordionSection />
     </div>
   )
 }
