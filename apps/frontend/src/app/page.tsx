@@ -7,7 +7,7 @@ import HowItWorksStep from '@/components/HowItWorksStep'
 
 export default function App() {
   return (
-    <div className="bg-background h-[2920px]">
+    <div className="bg-background h-screen-full">
       <Header />
       <Home />
       <HowItWorksStep />

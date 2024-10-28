@@ -3,8 +3,8 @@ import { Card, CardTitle, CardDescription } from './ui/card'
 
 export default function HowItWorksStep() {
   return (
-    <div className="flex flex-col items-center gap-24 pt-24 px-4">
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-lime-500 text-center">
+    <div className="flex flex-col items-center gap-24 pt-12 px-4">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-lime-400 text-center">
         Como funciona?
       </h1>
 

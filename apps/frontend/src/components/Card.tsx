@@ -12,7 +12,7 @@ import profile from '../../public/profiles.png'
 export default function FeatureCard() {
   return (
     <div className="flex justify-center items-center px-14 ">
-      <Card className="flex flex-col max-w-7xl bg-card text-white p-6 rounded-lg shadow-lg border-none py-12 mt-36 lg:flex-row lg:items-start">
+      <Card className="flex flex-col max-w-7xl bg-card text-white p-6 rounded-lg shadow-lg border-none py-12 mt-24 lg:flex-row lg:items-start">
         {/* Conteúdo do Card */}
         <div className="lg:w-1/2">
           <CardHeader>
@@ -23,10 +23,13 @@ export default function FeatureCard() {
               Encontre seu par ideal e embarquem juntos rumo à vitória!
             </CardTitle>
             <CardDescription className="max-w-xl text-lg text-gray-400 mt-2">
-            Encare seu perfil como o reflexo das suas conquistas e habilidades no jogo, mostrando quem você é como jogador. 
+              Encare seu perfil como o reflexo das suas conquistas e habilidades
+              no jogo, mostrando quem você é como jogador.
             </CardDescription>
             <CardDescription className="max-w-xl text-lg text-gray-400 mt-2">
-            Nosso objetivo é simplificar sua jornada, oferecendo uma única página que reúne tudo o que você precisa para a melhor experiência de jogo.
+              Nosso objetivo é simplificar sua jornada, oferecendo uma única
+              página que reúne tudo o que você precisa para a melhor experiência
+              de jogo.
             </CardDescription>
             <CardContent className="pt-0 p-0 max-w-xl text-gray-400">
               <ul className="mt-4 space-y-6">
@@ -36,7 +39,7 @@ export default function FeatureCard() {
                   vitórias juntos!
                 </li>
                 <li className="flex gap-4 items-center">
-                  <Check className="text-green-500 w-36 h-36 sm:w-24 sm:h-24 md:w-20 md:h-20 lg:w-[60px] lg:h-[60px]" />
+                  <Check className="text-green-500 w-36 h-36 sm:w-24 sm:h-24 md:w-20 md:h-20 lg:w-[50px] lg:h-[50px]" />
                   Encontre os companheiros perfeitos para formar seu time ideal,
                   sincronizem estratégias e dominem o Clash juntos rumo à
                   vitória.
