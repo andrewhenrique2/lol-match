@@ -3,7 +3,7 @@
 
 ![logo](https://github.com/user-attachments/assets/1390f1cc-0048-4fe3-ae41-f287afa7d548)
 
-![localhost_3000_ (1)](https://github.com/user-attachments/assets/1f1d49f8-a372-4eea-9306-44244422d087)
+![localhost_3000_ (5)](https://github.com/user-attachments/assets/f836602e-41c6-45af-b623-e8023827fed0)
 
 
 ## Descrição:
