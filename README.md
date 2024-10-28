@@ -1,4 +1,10 @@
-# LOL-MATCH 🎮
+
+<div align="center">
+
+![logo](https://github.com/user-attachments/assets/1390f1cc-0048-4fe3-ae41-f287afa7d548)
+
+![localhost_3000_](https://github.com/user-attachments/assets/e55ff7c1-7146-4630-8cf0-6070a1843131)
+
 ## Descrição:
 LOL-MATCH é um projeto em andamento que visa criar uma plataforma interativa para fãs de League of Legends. O objetivo é conectar jogadores, facilitando a busca por parceiros de jogo e oferecendo um sistema de chat em tempo real, além de integrações com dados relevantes do jogo. 🌟
 
@@ -55,3 +61,4 @@ Instale as dependências: npm install 📦<br/>
 Execute o projeto: npm start 🚀<br/>
 Contribuições e Feedbacks:<br/>
 Contribuições são sempre bem-vindas! Se você encontrar algum bug ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue. 💬<br/>
+<div/>
