@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="flex flex-col items-center lg:items-start">
             <h2 className="text-4xl font-bold text-lime-500">Match</h2>
             <p className="text-gray-400 mt-2">
-              A única ferramenta que vais precisar para encontrar o teu duo perfeito.
+            A ferramenta ideal para você encontrar o parceiro perfeito e dominar o jogo.
             </p>
           </div>
 

@@ -11,7 +11,7 @@ import profile from '../../public/profiles.png'
 
 export default function FeatureCard() {
   return (
-    <div className="flex justify-center items-center px-14 ">
+    <div className="flex justify-center items-center px-14 mb-24">
       <Card className="flex flex-col max-w-7xl bg-card text-white p-6 rounded-lg shadow-lg border-none py-12 mt-24 lg:flex-row lg:items-start">
         {/* Conteúdo do Card */}
         <div className="lg:w-1/2">
