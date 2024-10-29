@@ -52,7 +52,7 @@ export default function Header() {
               hover:scale-105
             "
           >
-           Iniciar Sessão
+            Iniciar Sessão
           </Button>
         </Link>
       </div>

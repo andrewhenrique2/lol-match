@@ -1,9 +1,9 @@
-"use client";  // Torna o componente um Client Component
+'use client' // Torna o componente um Client Component
 
-import Link from 'next/link';
-import { Send } from 'lucide-react';
-import { Input } from './ui/input';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import Link from 'next/link'
+import { Send } from 'lucide-react'
+import { Input } from './ui/input'
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -14,7 +14,8 @@ export default function Footer() {
           <div className="flex flex-col items-center lg:items-start">
             <h2 className="text-4xl font-bold text-lime-500">Match</h2>
             <p className="text-gray-400 mt-2">
-            A ferramenta ideal para você encontrar o parceiro perfeito e dominar o jogo.
+              A ferramenta ideal para você encontrar o parceiro perfeito e
+              dominar o jogo.
             </p>
           </div>
 
@@ -23,20 +24,36 @@ export default function Footer() {
             <div>
               <h3 className="text-lg font-semibold">Match</h3>
               <ul className="space-y-2">
-                <li><Link href="#">Página inicial</Link></li>
-                <li><Link href="#">Procurar Clash</Link></li>
-                <li><Link href="#">Procurar Duos</Link></li>
-                <li><Link href="#">Inscrever-me</Link></li>
+                <li>
+                  <Link href="#">Página inicial</Link>
+                </li>
+                <li>
+                  <Link href="#">Procurar Clash</Link>
+                </li>
+                <li>
+                  <Link href="#">Procurar Duos</Link>
+                </li>
+                <li>
+                  <Link href="#">Inscrever-me</Link>
+                </li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold">General</h3>
               <ul className="space-y-2">
-                <li><Link href="#">Sobre Match</Link></li>
-                <li><Link href="#">Blog dos fundadores</Link></li>
-                <li><Link href="#">Política de Privacidade</Link></li>
-                <li><Link href="#">Termos e condições</Link></li>
+                <li>
+                  <Link href="#">Sobre Match</Link>
+                </li>
+                <li>
+                  <Link href="#">Blog dos fundadores</Link>
+                </li>
+                <li>
+                  <Link href="#">Política de Privacidade</Link>
+                </li>
+                <li>
+                  <Link href="#">Termos e condições</Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -45,15 +62,16 @@ export default function Footer() {
           <div className="w-full lg:w-auto flex flex-col items-center lg:items-start px-4 lg:px-0">
             <h3 className="text-lg font-semibold mb-2">Receba as Novidades</h3>
             <p className="text-sm text-gray-400 mb-4 text-center lg:text-left">
-              Inscreva-se para receber atualizações sobre novos recursos e torneios exclusivos.
+              Inscreva-se para receber atualizações sobre novos recursos e
+              torneios exclusivos.
             </p>
             <div className="flex items-center w-full max-w-md space-x-2">
-              <Input 
-                placeholder="Digite seu email" 
-                className="flex-1 bg-gray-700 text-white placeholder-gray-400" 
+              <Input
+                placeholder="Digite seu email"
+                className="flex-1 bg-gray-700 text-white placeholder-gray-400"
                 type="email"
               />
-              <button 
+              <button
                 className="p-2 bg-lime-500 rounded-md hover:bg-lime-600 transition-colors"
                 onClick={() => alert('Email cadastrado com sucesso!')}
               >
@@ -62,13 +80,19 @@ export default function Footer() {
             </div>
 
             <div className="flex space-x-4 mt-4">
-              <Link href="https://www.facebook.com/profile.php?id=61560597991454" target="_blank">
+              <Link
+                href="https://www.facebook.com/profile.php?id=61560597991454"
+                target="_blank"
+              >
                 <FaFacebook className="w-6 h-6 text-white hover:text-lime-500 transition-colors" />
               </Link>
               <Link href="https://x.com/AndrewC21967245" target="_blank">
                 <FaTwitter className="w-6 h-6 text-white hover:text-lime-500 transition-colors" />
               </Link>
-              <Link href="https://www.instagram.com/andrewchucrute/" target="_blank">
+              <Link
+                href="https://www.instagram.com/andrewchucrute/"
+                target="_blank"
+              >
                 <FaInstagram className="w-6 h-6 text-white hover:text-lime-500 transition-colors" />
               </Link>
             </div>
@@ -81,5 +105,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

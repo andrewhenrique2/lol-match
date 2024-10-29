@@ -1,6 +1,7 @@
 // src/app/page.tsx
 import AccordionSection from '@/components/AccordionSection'
 import Card from '@/components/Card'
+import CardParty from '@/components/CardParty'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import Home from '@/components/home'
@@ -12,9 +13,10 @@ export default function App() {
       <Header />
       <Home />
       <HowItWorksStep />
+      <CardParty />
       <Card />
       <AccordionSection />
-      <Footer/>
+      <Footer />
     </div>
   )
 }
