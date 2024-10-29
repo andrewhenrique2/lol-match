@@ -3,8 +3,8 @@
 
 ![logo](https://github.com/user-attachments/assets/1390f1cc-0048-4fe3-ae41-f287afa7d548)
 
-![localhost_3000_ (5)](https://github.com/user-attachments/assets/f836602e-41c6-45af-b623-e8023827fed0)
 
+![localhost_3000_](https://github.com/user-attachments/assets/8d7d847b-6c24-426a-a1f0-498334042c62)
 
 ## Descrição:
 LOL-MATCH é um projeto em andamento que visa criar uma plataforma interativa para fãs de League of Legends. O objetivo é conectar jogadores, facilitando a busca por parceiros de jogo e oferecendo um sistema de chat em tempo real, além de integrações com dados relevantes do jogo. 🌟
