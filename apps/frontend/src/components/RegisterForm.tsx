@@ -16,12 +16,18 @@ import {
 import { FaGoogle, FaDiscord } from 'react-icons/fa'
 import { Eye, EyeOff } from 'lucide-react'
 
-export default function AuthLogin() {
+interface AuthFormProps {
+  type: 'login' | 'register' // Define o tipo de formulário
+}
+
+export function AuthForm({ type }: AuthFormProps) {
   const [showPassword, setShowPassword] = useState(false)
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword)
   }
+
+  const isLogin = type === 'login' // Verifica se é login ou registro
 
   return (
     <div className="bg-card h-screen w-full">
@@ -44,24 +50,37 @@ export default function AuthLogin() {
         </Link>
       </div>
 
-      {/* Card de Login */}
+      {/* Card de Login/Registro */}
       <Card className="max-w-xl mx-auto bg-[#1F2937] text-white p-10 rounded-lg shadow-lg mt-20 border-none">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-semibold mb-2 text-lime-400">
-            Fazer login
+            {isLogin ? 'Fazer login' : 'Criar conta'}
           </CardTitle>
           <CardDescription className="text-gray-300 mb-6">
-            Boas-vindas à comunidade Match, onde todo jogo é um bom jogo.
+            {isLogin
+              ? 'Boas-vindas à comunidade Match, onde todo jogo é um bom jogo.'
+              : 'Crie sua conta e junte-se à comunidade Match.'}
           </CardDescription>
         </CardHeader>
         <CardContent>
-          {/* Formulário de Email e Senha */}
           <form className="flex flex-col gap-4">
+            {/* Nome apenas para Registro */}
+            {!isLogin && (
+              <input
+                type="text"
+                placeholder="Nome"
+                className="w-full p-3 border border-gray-500 rounded-md bg-transparent text-white placeholder-gray-400"
+              />
+            )}
+
+            {/* Email */}
             <input
               type="email"
               placeholder="Endereço de e-mail"
               className="w-full p-3 border border-gray-500 rounded-md bg-transparent text-white placeholder-gray-400"
             />
+
+            {/* Senha */}
             <div className="relative w-full">
               <input
                 type={showPassword ? 'text' : 'password'}
@@ -76,8 +95,9 @@ export default function AuthLogin() {
                 {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
               </button>
             </div>
+
             <Button className="bg-lime-500 hover:bg-lime-400 text-white py-3 rounded-md">
-              Continuar com e-mail
+              {isLogin ? 'Continuar com e-mail' : 'Registrar'}
             </Button>
           </form>
 
@@ -98,11 +118,14 @@ export default function AuthLogin() {
             </Button>
           </div>
 
-          {/* Link para Registro */}
+          {/* Link para Login/Registro */}
           <p className="text-center text-lg mt-6">
-            Ainda não é membro?{' '}
-            <Link href="/register" className="text-lime-400">
-              Registre-se agora
+            {isLogin ? 'Ainda não é membro?' : 'Já tem uma conta?'}{' '}
+            <Link
+              href={isLogin ? '/register' : '/login'}
+              className="text-lime-400"
+            >
+              {isLogin ? 'Registre-se agora' : 'Fazer login'}
             </Link>
           </p>
 
