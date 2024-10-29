@@ -31,7 +31,7 @@ export default function Header() {
           </Link>
         </nav>
 
-        <Link href="/criar-perfil">
+        <Link href="/login">
           <Button
             className="
               mb-4 
