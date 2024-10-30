@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import logo from '../../public/logo.png'
 import { Button } from './ui/button'
 import { HomeIcon } from 'lucide-react'
 import {
@@ -35,7 +34,7 @@ export function AuthForm({ type }: AuthFormProps) {
       <div className="flex bg-background w-screen justify-between items-center px-80 py-6">
         <Link href="/">
           <Image
-            src={logo}
+            src="/logo.png"
             alt="Logo"
             quality={100}
             width={130}
