@@ -23,30 +23,29 @@ export default function AuthLogin() {
   }
 
   return (
-    <div className="bg-card h-screen w-full">
-      {/* Cabeçalho com logo e botão Home */}
-      <div className="flex bg-background w-screen justify-between items-center px-80 py-6">
-        <Link href="/">
+    <div className="bg-card min-h-screen flex flex-col justify-between">
+      {/* Header Responsivo */}
+      <div className="w-full flex items-center justify-between py-4 px-4 sm:px-6 lg:px-80 bg-background ">
+        <Link href="/" className="flex items-center space-x-2">
           <Image
             src="/logo.png"
             alt="Logo"
-            quality={100}
             width={130}
             height={130}
             className="cursor-pointer"
           />
         </Link>
         <Link href="/">
-          <Button className="bg-lime-600 hover:bg-lime-500 text-white text-lg py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
+          <Button className="flex bg-lime-600 hover:bg-lime-500 text-white text-lg py-2 px-4 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105">
             <HomeIcon size={24} />
           </Button>
         </Link>
       </div>
 
       {/* Card de Login */}
-      <Card className="max-w-xl mx-auto bg-[#1F2937] text-white p-10 rounded-lg shadow-lg mt-20 border-none">
+      <Card className="w-full max-w-sm sm:max-w-md lg:max-w-xl mx-auto bg-[#1F2937] text-white p-6 sm:p-8 rounded-lg shadow-lg mt-12 ">
         <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-semibold mb-2 text-lime-400">
+          <CardTitle className="text-2xl sm:text-3xl font-semibold mb-2 text-lime-400">
             Fazer login
           </CardTitle>
           <CardDescription className="text-gray-300 mb-6">
@@ -54,7 +53,6 @@ export default function AuthLogin() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          {/* Formulário de Email e Senha */}
           <form className="flex flex-col gap-4">
             <input
               type="email"
@@ -80,14 +78,12 @@ export default function AuthLogin() {
             </Button>
           </form>
 
-          {/* Separador */}
           <div className="flex items-center my-6">
             <hr className="flex-grow border-gray-500" />
             <span className="mx-2 text-gray-400">OU</span>
             <hr className="flex-grow border-gray-500" />
           </div>
 
-          {/* Botões de Login Social */}
           <div className="flex justify-center gap-4">
             <Button className="bg-white border rounded-full p-4">
               <FaGoogle size={24} className="text-red-500" />
@@ -97,7 +93,6 @@ export default function AuthLogin() {
             </Button>
           </div>
 
-          {/* Link para Registro */}
           <p className="text-center text-lg mt-6">
             Ainda não é membro?{' '}
             <Link href="/register" className="text-lime-400">
@@ -105,7 +100,6 @@ export default function AuthLogin() {
             </Link>
           </p>
 
-          {/* Termos e Política */}
           <p className="text-center text-xs mt-4 text-gray-400">
             <Link href="/terms" className="text-gray-400">
               Termos de Uso
@@ -117,6 +111,11 @@ export default function AuthLogin() {
           </p>
         </CardContent>
       </Card>
+
+      {/* Footer Responsivo */}
+      <footer className="w-full py-4 text-center text-xs text-gray-400 bg-background">
+        © 2024 Match - Todos os direitos reservados.
+      </footer>
     </div>
   )
 }
