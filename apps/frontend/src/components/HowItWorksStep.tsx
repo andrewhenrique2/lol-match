@@ -1,3 +1,4 @@
+import Link from 'next/link' // Import do Link do Next.js
 import { Button } from './ui/button'
 import { Card, CardTitle, CardDescription } from './ui/card'
 
@@ -58,6 +59,7 @@ export default function HowItWorksStep() {
           </CardDescription>
         </Card>
 
+        {/* Outros Cards */}
         <Card
           className="
             justify-center 
@@ -155,27 +157,29 @@ export default function HowItWorksStep() {
         </Card>
       </div>
 
-      {/* Botão Final */}
-      <Button
-        className="
-          bg-lime-600 
-          hover:bg-lime-500 
-          text-white 
-          text-lg 
-          py-6 
-          px-6 
-          rounded-lg 
-          shadow-lg 
-          hover:shadow-xl 
-          transition-all 
-          duration-300 
-          ease-in-out 
-          transform 
-          hover:scale-105
-        "
-      >
-        Criar o seu perfil
-      </Button>
+      {/* Botão com Link para Página de Registro */}
+      <Link href="/register">
+        <Button
+          className="
+            bg-lime-600 
+            hover:bg-lime-500 
+            text-white 
+            text-lg 
+            py-6 
+            px-6 
+            rounded-lg 
+            shadow-lg 
+            hover:shadow-xl 
+            transition-all 
+            duration-300 
+            ease-in-out 
+            transform 
+            hover:scale-105
+          "
+        >
+          Criar o seu perfil
+        </Button>
+      </Link>
     </div>
   )
 }

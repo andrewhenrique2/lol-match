@@ -11,7 +11,6 @@ apps/*/package-lock.json
 
 # Ignorar pastas geradas pelo Next.js
 .next/
-public/
 
 # Ignorar arquivos de configuração ou logs
 *.log
